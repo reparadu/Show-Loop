@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Model Loop!</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<script  src="./js/javascript.js"></script>
+</head>
+
+<body>
+<p id="CO-ETH"></p>
+
+<table>
+ <tr>
+  <td>
+   <td><div class="eth"><center><h4> ETH </h4></center></div></td>
+   <td><div class="xrp"><center><h4> XRP </h4></center></div></td>
+   <td><div class="etc"><center><h4> ETC </h4></center></div></td>
+ </td>
+</tr>
+
+
+<tr>
+  <td></td>
+    <td>
+      <div class="eth">
+        <table>
+          <tr>
+            <td>
+              <center><h3>Buy</h3></center>
+            </td>
+            <td>
+              <center><h3>Sell</h3></center>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+
+    <td>
+      <div class="xrp">
+        <table>
+          <tr>
+            <td>
+              <h3>Buy</h3>
+            </td>
+            <td>
+              <h3>Sell</h3>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+
+    <td>
+      <div class="etc">
+        <table>
+          <tr>
+            <td>
+              <center><h3>Buy</h3></center>
+            </td>
+            <td>
+              <center><h3>Sell</h3></center>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+
+    <td>
+      <div class="buy">
+        <table>
+          <tr>
+            <td>
+              <h3></h3>
+            </td>
+            <td>
+              <h3></h3>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+
+    <td>
+      <div class="sell">
+        <table>
+          <tr>
+            <td>
+              <h3></h3>
+            </td>
+            <td>
+              <h3></h3>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+</tr>
+
+
+<tr>
+  <td><center><h2> Kraken </h2></center></td>
+    <td>
+      <div class="eth">
+        <table>
+          <tr>
+            <td>
+              <h3 id="KK-ETH_buychoice"></h3>
+            </td>
+            <td>
+              <h3 id="KK-ETH_sellchoice"></h3>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+
+    <td>
+      <div class="xrp">
+        <table>
+          <tr>
+            <td>
+              <h3 id="KK-XRP_buychoice"></h3>
+            </td>
+            <td>
+              <h3 id="KK-XRP_sellchoice"></h3>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+
+    <td>
+      <div class="etc">
+        <table>
+          <tr>
+            <td>
+              <h3 id="KK-ETC_buychoice"></h3>
+            </td>
+            <td>
+              <h3 id="KK-ETC_sellchoice"></h3>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+
+</tr>
+
+<tr>
+  <td><center><h2> Coinone </h2></cente ></td>
+    
+      <td>
+        <div class="eth">
+          <table>
+            <tr>
+              <td>
+                <h3 id="CO-ETH_buychoice"></h3>
+              </td>
+              <td>
+                <h3 id="CO-ETH_sellchoice"></h3>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="xrp">
+          <table>
+            <tr>
+              <td>
+                <h3 id="CO-XRP_buychoice"></h3>
+              </td>
+              <td>
+                <h3 id="CO-XRP_sellchoice"></h3>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="etc">
+          <table>
+            <tr>
+              <td>
+                <h3 id="CO-ETC_buychoice"></h3>
+              </td>
+              <td>
+                <h3 id="CO-ETC_sellchoice"></h3>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+  </tr>
+</table>
+<br>
+<table>
+  <tr>
+    <td>
+      <h2>Loop</h2>
+    </td>
+    <td>
+      <h2 class="eth">ETH > XRP > ETH</h2>
+    </td>
+    <td>
+      <h2 class="xrp">XRP > ETH > XRP</h2>
+    </td>
+  </tr>
+  <tr>  
+    <td>
+     <h2>CO-KK</h2>
+    </td>
+
+    <td class = "eth">
+      <h3 id="CO-KK_ETH-XRP" ></h3>
+    </td>
+    <td class = "xrp">
+      <h3 id="CO-KK_XRP-ETH" ></h3>
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <h2>KK-CO</h2>
+    </td>
+
+    <td class =" eth">
+      <h3 id ="KK-CO_ETH-XRP"></h3>
+    </td>
+
+    <td class ="xrp">
+      <h3 id ="KK-CO_XRP-ETH"></h3>
+    </td>
+
+  </tr>
+</table>
+<br>
+<table>
+  <tr>
+    <td>
+      <h2>Loop</h2>
+    </td>
+    <td>
+      <h2 class="eth" >ETH > ETC > ETH</h2>
+    </td>
+    <td>
+      <h2 class="etc">ETC > ETH > ETC</h2>
+    </td>
+  </tr>
+  <tr>  
+    <td>
+     <h2>CO-KK</h2>
+    </td>
+
+    <td class = "eth">
+      <h3 id="CO-KK_ETH-ETC" ></h3>
+    </td>
+    <td class = "etc">
+      <h3 id="CO-KK_ETC-ETH" ></h3>
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <h2>KK-CO</h2>
+    </td>
+
+    <td class =" eth">
+      <h3 id ="KK-CO_ETH-ETC"></h3>
+    </td>
+
+    <td class ="etc">
+      <h3 id ="KK-CO_ETC-ETH"></h3>
+    </td>
+
+  </tr>
+</table>
+<br>
+<table>
+  <tr>
+    <td>
+      <h2>Loop</h2>
+    </td>
+    <td>
+      <h2 class="xrp">XRP > ETC > XRP</h2>
+    </td>
+    <td>
+      <h2 class="etc">ETC > XRP > ETC</h2>
+    </td>
+  </tr>
+  <tr>  
+    <td>
+     <h2>CO-KK</h2>
+    </td>
+
+    <td class = "xrp">
+      <h3 id="CO-KK_XRP-ETC" ></h3>
+    </td>
+    <td class = "etc">
+      <h3 id="CO-KK_ETC-XRP" ></h3>
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <h2>KK-CO</h2>
+    </td>
+
+    <td class ="xrp">
+      <h3 id ="KK-CO_XRP-ETC"></h3>
+    </td>
+
+    <td class ="etc">
+      <h3 id ="KK-CO_ETC-XRP"></h3>
+    </td>
+
+  </tr>
+</table>
+
+</body>
+</html>
+

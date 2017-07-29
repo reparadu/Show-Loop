@@ -1,0 +1,37 @@
+
+    
+  h2 {
+    background-color: rgba(255, 204, 204, 0.2);
+    color: black;
+    padding: 10px;
+  }
+  .btc {
+    background-color: rgba(255, 204, 102, 0.2);
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+  .eth {
+    background-color: rgba(153, 204, 255, 0.2);
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+  .xrp {
+    background-color: rgba(0, 204, 153, 0.2);
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+.etc {
+    background-color: rgba(255, 204, 204, 0.2);
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+.ltc {
+    background-color: rgb(240, 240, 245);
+    width: 300px;
+    padding: 10px;
+}
+ 
